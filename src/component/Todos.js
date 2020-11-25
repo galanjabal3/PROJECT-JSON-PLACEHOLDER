@@ -23,17 +23,31 @@ class Todos extends Component{
 
     return (
       <div >
-        <div align="center">
-                     <Mui.Button variant="outlined" color="primary" href="/posts">Posts</Mui.Button>
-                     <Mui.Button variant="outlined" color="primary" href="/albums">Albums</Mui.Button>
-                     <Mui.Button variant="outlined" color="primary" href="/comments">Comments</Mui.Button>
-                     <Mui.Button variant="outlined" color="primary" href="/photos">Photos</Mui.Button>
-                     <Mui.Button variant="outlined" color="primary" href="/todos">Todos</Mui.Button>
-                     <Mui.Button variant="outlined" color="primary" href="/users">Users</Mui.Button>
-                     <h1 style={{ textAlign:'center' }}>DATA JSON PLACEHOLDER</h1><hr/>
-         </div>
+        <div class="navbar-fixed ">
+           <nav class="nav-extended #000000 black">
+           <div class="nav-wrapper ">
+            <a href="#" class="brand-logo">RESOURCES</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+           </div>
+           <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a href="/" class="active">Posts</a></li>
+              <li class="tab"><a href="/albums" class="active">Albums</a></li>
+              <li class="tab"><a href="/comments" class="active">Comments</a></li>
+              <li class="tab"><a href="/photos" class="active">Photos</a></li>
+              <li class="tab"><a href="/todos" class="active">Todos</a></li>
+              <li class="tab"><a href="/users" class="active">Users</a></li>
+            </ul>
+          </div>
+         </nav>
+         </div><br/><br/>
+     <Mui.Container fixed>
+     <h2 style={{ textAlign:'center' }}>DATA TODOS</h2>
         <table border="2">
-          <tr>
+          <tr class="white-text #d50000 red accent-4">
             <td>USER ID</td>
             <td>ID</td>
             <td>TITLE</td>
@@ -48,6 +62,7 @@ class Todos extends Component{
             </tr>
             )}
         </table>
+        </Mui.Container>
       </div>
     );
   }

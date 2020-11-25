@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Switch, Link } from'react-router-dom';
 import Posts from'./component/Posts';
@@ -12,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
     <Switch>
-      <Link path='/posts' exact component={Posts}/>
+      <Link path='/' exact component={Posts}/>
       <Link path='/comments' exact component={Comments}/>
       <Link path='/albums' exact component={Albums}/>
       <Link path='/photos' exact component={Photos}/>
